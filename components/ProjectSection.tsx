@@ -34,16 +34,25 @@ const ProjectSection: React.FC = () => {
 
         {/* Video Section - Moved up */}
         <div className="mb-6 flex-shrink-0 relative z-50">
-          <video
-            src="/videos/Oulim_video.mp4"
-            controls
-            autoPlay
-            muted
-            loop
-            className="w-full h-auto rounded-lg shadow-lg"
-          >
-            Your browser does not support the video tag.
-          </video>
+          <div className="w-full h-64 bg-gray-800 rounded-lg shadow-lg flex items-center justify-center">
+            <div className="text-center">
+              <p className="text-white text-lg mb-4">동영상을 YouTube에 업로드하고</p>
+              <p className="text-white text-sm">아래 주석을 해제하여 임베드하세요</p>
+            </div>
+          </div>
+          {/* 
+          YouTube 임베드 예시 (동영상 업로드 후 사용):
+          <iframe 
+            width="100%" 
+            height="400" 
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            title="YouTube video player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen
+            className="rounded-lg"
+          ></iframe>
+          */}
         </div>
 
         {/* Scrollable Content */}
@@ -113,16 +122,25 @@ const ProjectSection: React.FC = () => {
 
         {/* Video Section - Moved up */}
         <div className="max-w-4xl mx-auto mb-6 md:mb-8 lg:mb-10 relative z-50">
-          <video
-            src="/videos/Oulim_video.mp4"
-            controls
-            autoPlay
-            muted
-            loop
-            className="w-full h-auto rounded-lg shadow-lg"
-          >
-            Your browser does not support the video tag.
-          </video>
+          <div className="w-full h-64 bg-gray-800 rounded-lg shadow-lg flex items-center justify-center">
+            <div className="text-center">
+              <p className="text-white text-lg mb-4">동영상을 YouTube에 업로드하고</p>
+              <p className="text-white text-sm">아래 주석을 해제하여 임베드하세요</p>
+            </div>
+          </div>
+          {/* 
+          YouTube 임베드 예시 (동영상 업로드 후 사용):
+          <iframe 
+            width="100%" 
+            height="400" 
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            title="YouTube video player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen
+            className="rounded-lg"
+          ></iframe>
+          */}
         </div>
 
         <div className="relative grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-10">
