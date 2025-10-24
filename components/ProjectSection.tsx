@@ -34,16 +34,9 @@ const ProjectSection: React.FC = () => {
 
         {/* Video Section - Moved up */}
         <div className="mb-6 flex-shrink-0 relative z-50">
-          <video
-            src="/videos/Oulim_video.mp4"
-            controls
-            autoPlay
-            muted
-            loop
-            className="w-full h-auto rounded-lg shadow-lg"
-          >
-            Your browser does not support the video tag.
-          </video>
+          <div className="w-full h-64 bg-gray-800 rounded-lg shadow-lg flex items-center justify-center">
+            <p className="text-white text-lg">동영상이 곧 업로드될 예정입니다</p>
+          </div>
         </div>
 
         {/* Scrollable Content */}
@@ -113,16 +106,9 @@ const ProjectSection: React.FC = () => {
 
         {/* Video Section - Moved up */}
         <div className="max-w-4xl mx-auto mb-6 md:mb-8 lg:mb-10 relative z-50">
-          <video
-            src="/videos/Oulim_video.mp4"
-            controls
-            autoPlay
-            muted
-            loop
-            className="w-full h-auto rounded-lg shadow-lg"
-          >
-            Your browser does not support the video tag.
-          </video>
+          <div className="w-full h-64 bg-gray-800 rounded-lg shadow-lg flex items-center justify-center">
+            <p className="text-white text-lg">동영상이 곧 업로드될 예정입니다</p>
+          </div>
         </div>
 
         <div className="relative grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-10">
