@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RE:PERSONA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #000000;
+        color: #e5e7eb; /* gray-200 */
+        font-family: "Poppins", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow: hidden; /* Prevent body scroll, scrolling is handled by a container */
+      }
+      .font-display {
+        font-family: "Orbitron", sans-serif;
+      }
+      .bg-gradient-radial {
+        background-image: radial-gradient(circle, var(--tw-gradient-stops));
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+              display: ["Orbitron", "sans-serif"],
+            },
+            animation: {
+              float: "float 30s ease-in-out infinite",
+              glow: "glow 4s ease-in-out infinite",
+            },
+            keyframes: {
+              float: {
+                "0%": {
+                  transform: "translate(0, 0) rotate(0deg)",
+                  opacity: 0.3,
+                },
+                "25%": {
+                  transform: "translate(20px, 40px) rotate(45deg)",
+                  opacity: 0.5,
+                },
+                "50%": {
+                  transform: "translate(-30px, -10px) rotate(90deg)",
+                  opacity: 0.4,
+                },
+                "75%": {
+                  transform: "translate(10px, -30px) rotate(135deg)",
+                  opacity: 0.6,
+                },
+                "100%": {
+                  transform: "translate(0, 0) rotate(180deg)",
+                  opacity: 0.3,
+                },
+              },
+              glow: {
+                "0%, 100%": {
+                  textShadow:
+                    "0 0 5px rgba(255,255,255,0.7), 0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(236, 72, 153, 0.7), 0 0 30px rgba(236, 72, 153, 0.5)",
+                },
+                "50%": {
+                  textShadow:
+                    "0 0 10px rgba(255,255,255,0.9), 0 0 20px rgba(255,255,255,0.7), 0 0 35px rgba(236, 72, 153, 0.9), 0 0 50px rgba(236, 72, 153, 0.7)",
+                },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+          "react/": "https://aistudiocdn.com/react@^19.2.0/",
+          "react": "https://aistudiocdn.com/react@^19.2.0",
+          "three": "https://aistudiocdn.com/three@^0.180.0",
+          "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+          "clsx": "https://aistudiocdn.com/clsx@^2.1.1",
+          "tailwind-merge": "https://aistudiocdn.com/tailwind-merge@^3.3.1"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
